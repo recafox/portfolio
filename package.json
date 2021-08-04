@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-plugin-jest-dom": "^3.9.0"
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "msw": "^0.33.2"
   }
 }
