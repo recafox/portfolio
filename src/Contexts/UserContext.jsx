@@ -24,11 +24,17 @@ export function UserDataProvider(props) {
   const getDemo = function () {
     return axios.get(urls.demoURL);
   };
+
+  const getExp = function () {
+    return axios.get(urls.expURL);
+  };
+
   useEffect(() => {
-    Promise.all([getProfile(), getDemo()]).then(function (results) {
+    Promise.all([getProfile(), getDemo(), getExp()]).then(function (results) {
       setUserState({
         profile: results[0].data[0],
         demos: results[1].data,
+        exps: results[2].data,
       });
     });
   }, []);
