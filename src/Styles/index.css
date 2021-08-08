@@ -1,0 +1,47 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: var(--primaryColor);
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 40px;
+}
+
+.bordered-container {
+  border: 1px solid black;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.badge img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.badge p {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.badge-wrapper {
+  display: grid;
+  padding: 10px;
+  border: 1px solid black;
+  grid-template-columns: repeat(5, 20%);
+  justify-items: center;
+  row-gap: 15px;
+}

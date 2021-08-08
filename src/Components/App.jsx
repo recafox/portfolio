@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
 import { useUserData } from "../Contexts/UserContext";
 import Loading from "./Loading";
 import Page from "./Page";
 import { useState, useEffect } from "react";
+import theme from "../Theme";
 
 const Container = styled.div`
   width: 1040px;
@@ -25,7 +26,11 @@ const App = () => {
     }
     return <Page></Page>;
   };
-  return <Container>{renderLoading()}</Container>;
+  return (
+    <ThemeProvider theme={theme}>
+      <Container>{renderLoading()}</Container>
+    </ThemeProvider>
+  );
 };
 
 export default App;

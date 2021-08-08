@@ -1,9 +1,15 @@
+import { getImagePath } from "Helpers";
+
 const Link = ({ link }) => {
   return (
-    <div data-testid="component-social-link" data-link={link.link}>
-      <img src=""></img>
+    <a
+      data-testid="component-social-link"
+      href={link.link}
+      className="link badge"
+    >
+      <img src={getImagePath(link.imgPath)} alt={link.name}></img>
       <p>{link.name}</p>
-    </div>
+    </a>
   );
 };
 
