@@ -8,30 +8,35 @@ const Card = styled.div`
   h4 {
     display: flex;
     margin-bottom: 10px;
+
+    @media (max-width: 568px) {
+      flex-direction: column;
+    }
   }
   .exp-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-right: 15px;
+
+    @media (max-width: 568px) {
+      margin-bottom: 10px;
+      width: fit-content;
+    }
   }
 
   .exp-company {
-    position: relative;
-
-    &:after {
-      content: "";
-      display: block;
-      height: 6px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      z-index: -1;
-      background: ${(props) => props.theme.green};
+    @media (max-width: 568px) {
+      margin-bottom: 10px;
+      width: fit-content;
     }
   }
 
   .exp-time {
     margin-left: auto;
+
+    @media (max-width: 568px) {
+      margin-left: 0;
+    }
   }
 
   p {

@@ -5,9 +5,18 @@ const Card = styled.div`
   padding: 15px;
 
   h4 {
-    font-size: 18px;
+    display: flex;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
+    a {
+      font-weight: normal;
+      font-size: 16px;
+    }
+    a:first-of-type {
+      margin-left: auto;
+      margin-right: 15px;
+    }
   }
 
   p {
@@ -40,7 +49,11 @@ const DemoCard = ({ demo }) => {
 
   return (
     <Card data-testid="component-demo-card" className="demo-card">
-      <h4>{demo.name}</h4>
+      <h4>
+        {demo.name}
+        <a href={demo.demolink}>作品連結</a>
+        <a href={demo.githubLink}>原始碼</a>
+      </h4>
       <div>{renderTags()}</div>
       <p>{demo.description}</p>
     </Card>

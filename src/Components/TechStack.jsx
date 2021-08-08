@@ -19,7 +19,7 @@ const TechStack = () => {
   };
   return (
     <div data-testid="component-techstack" className="section">
-      <SectionTitle text="TechStack"></SectionTitle>
+      <SectionTitle text="Tech Stack"></SectionTitle>
       <div className="badge-wrapper">{renderSkills()}</div>
     </div>
   );

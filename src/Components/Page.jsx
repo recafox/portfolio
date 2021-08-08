@@ -17,9 +17,9 @@ const Page = (prop) => {
       <Header></Header>
       <Contact></Contact>
       <TechStack></TechStack>
-      <Demo></Demo>
-      <Exp></Exp>
       <Introduction></Introduction>
+      <Exp></Exp>
+      <Demo></Demo>
     </Wrapper>
   );
 };

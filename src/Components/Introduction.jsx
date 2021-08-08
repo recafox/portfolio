@@ -14,7 +14,7 @@ const Introduction = () => {
   const text = useUserData().profile.description;
 
   return (
-    <div data-testid="component-introduction">
+    <div data-testid="component-introduction" className="section">
       <SectionTitle text="About"></SectionTitle>
       <Wrapper>{text}</Wrapper>
     </div>

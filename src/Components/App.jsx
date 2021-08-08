@@ -8,6 +8,10 @@ import theme from "../Theme";
 const Container = styled.div`
   width: 1040px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const App = () => {

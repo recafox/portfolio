@@ -5,6 +5,17 @@ const SkillName = styled.div`
   font-size: 18px;
   font-weight: 500;
   margin-top: 5px;
+  text-align: center;
+
+  @media (max-width: 568px) {
+    font-size: 16px;
+  }
+`;
+
+const SkillDesc = styled.p`
+  @media (max-width: 568px) {
+    display: none;
+  }
 `;
 
 const Skill = ({ skill }) => {
@@ -12,7 +23,7 @@ const Skill = ({ skill }) => {
     <div data-testid="component-skill" className="badge">
       <img src={getImagePath(skill.imgPath)} alt={skill.name}></img>
       <SkillName>{skill.name}</SkillName>
-      <p>{skill.description}</p>
+      <SkillDesc>{skill.description}</SkillDesc>
     </div>
   );
 };

@@ -11,6 +11,22 @@ const Wrapper = styled.div`
   .subtitle h2 {
     margin-right: 15px;
   }
+
+  @media (max-width: 768px) {
+    // flex-direction: column;
+
+    .subtitle-set {
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 568px) {
+    flex-direction: column;
+
+    .subtitle-set {
+      margin-left: 0;
+    }
+  }
 `;
 
 const MainTitle = styled.h1`
@@ -18,11 +34,20 @@ const MainTitle = styled.h1`
   font-weight: bold;
   width: 50%;
   letter-spacing: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 80px;
+    width: fit-content;
+  }
 `;
 
 const Title = styled.h2`
   font-size: ${(props) => (props.large ? "70px" : "50px")};
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: ${(props) => (props.large ? "35px" : "25px")};
+  }
 `;
 
 const Header = () => {
@@ -39,7 +64,7 @@ const Header = () => {
         <Wrapper className="subtitle">
           <Title>#INTJ</Title>
           <Title>#宅</Title>
-          <Title>#高齡少女</Title>
+          <Title>#٩(๑❛ᴗ❛๑)۶</Title>
         </Wrapper>
       </Wrapper>
     </Wrapper>
