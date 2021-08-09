@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     margin-left: auto;
   }
   .subtitle h2 {
-    margin-right: 15px;
+    margin-right: 10px;
   }
 
   @media (max-width: 768px) {
